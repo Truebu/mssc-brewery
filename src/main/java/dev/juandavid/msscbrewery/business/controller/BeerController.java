@@ -1,6 +1,6 @@
 package dev.juandavid.msscbrewery.business.controller;
 
-import dev.juandavid.msscbrewery.business.service.BeerService;
+import dev.juandavid.msscbrewery.business.service.beer.BeerService;
 import dev.juandavid.msscbrewery.model.dto.BeerDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +23,6 @@ public class BeerController {
 
     @GetMapping("/{beerid}")
     public ResponseEntity<BeerDto> getBeer(@PathVariable("beerid") UUID beerid){
-        return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
+        return new ResponseEntity<>(beerservice.getBeerById(beerid), HttpStatus.OK);
     }
 }

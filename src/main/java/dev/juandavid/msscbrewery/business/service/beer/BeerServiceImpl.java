@@ -1,5 +1,6 @@
-package dev.juandavid.msscbrewery.business.service;
+package dev.juandavid.msscbrewery.business.service.beer;
 
+import dev.juandavid.msscbrewery.business.service.beer.BeerService;
 import dev.juandavid.msscbrewery.model.dto.BeerDto;
 import org.springframework.stereotype.Service;
 

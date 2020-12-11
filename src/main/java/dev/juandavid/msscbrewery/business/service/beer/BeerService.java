@@ -1,4 +1,4 @@
-package dev.juandavid.msscbrewery.business.service;
+package dev.juandavid.msscbrewery.business.service.beer;
 
 import dev.juandavid.msscbrewery.model.dto.BeerDto;
 
