@@ -5,5 +5,11 @@ import dev.juandavid.msscbrewery.model.dto.CustomerDto;
 import java.util.UUID;
 
 public interface CustomerService {
-    CustomerDto getCustomById(UUID customId);
+    CustomerDto getCustomerById(UUID customId);
+
+    CustomerDto saveNewCustomer(CustomerDto customerDto);
+
+    void updateCustomer(CustomerDto customerDto);
+
+    void deleteById(UUID customerid);
 }
