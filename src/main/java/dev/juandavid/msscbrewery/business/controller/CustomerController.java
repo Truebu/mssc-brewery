@@ -5,16 +5,17 @@ import dev.juandavid.msscbrewery.model.dto.CustomerDto;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import java.security.PublicKey;
 import java.util.UUID;
 
+@Validated
 @RestController
 @RequestMapping("/api/v1/customer")
-public class CustomerController extends GenericController{
+public class CustomerController{
 
     private final CustomerService customerservice;
 

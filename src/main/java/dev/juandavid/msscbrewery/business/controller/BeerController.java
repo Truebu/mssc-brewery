@@ -15,7 +15,7 @@ import java.util.UUID;
 @Validated
 @RestController
 @RequestMapping("/api/v1/beer")
-public class BeerController extends GenericController{
+public class BeerController{
 
     private final BeerService beerservice;
 
